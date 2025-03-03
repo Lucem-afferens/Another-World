@@ -1,0 +1,53 @@
+.main {
+    margin-top: 130px;
+    width: 42%;
+    &__subtitle {
+        color: #e87d0e;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__title {
+        width: 95%;
+        font-size: clamp(1rem, 2.5vw, 3.8rem);
+        font-weight: 600;
+        line-height: 1.5em;
+        &_big {
+            text-transform: uppercase;
+            color: $btn-hover-color;
+        }
+    }
+    &__text {
+        font-size: clamp(18px, 1.4vw, 20px);
+        font-weight: 500;
+        line-height: 170%;
+        margin: 30px 0;
+        &_big {
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    &__visible {
+        display: none;
+        position: relative;
+        max-width: 45%;
+        top: 80px;
+        right: 0;
+        opacity: 0.8;
+        &_img {
+            max-width: 100%;
+            right: 0;
+            opacity: 0.8;
+        }
+    }
+    &__img {
+        display: block;
+        position: absolute;
+        width: 800px;
+        max-width: 60%;
+        min-height: 600px;
+        top: 110px;
+        right: 0;
+        opacity: 0.8;
+    }
+}

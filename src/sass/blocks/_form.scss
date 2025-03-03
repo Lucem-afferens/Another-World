@@ -1,0 +1,52 @@
+.form {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 120px;
+    display: block;
+    position: relative;
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &__descr {
+        display: block;
+        font-size: 18px;
+    }
+    &__newsletter {
+        margin-top: 30px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        border-radius: 10px;
+        background: #1c140f;
+        max-width: 100%;
+        min-height: 180px;
+        flex-wrap: wrap;
+        &__label {
+            max-width: 50%;
+            h1 {
+                font-size: clamp(1.5rem, 2.5vw, 3.8rem);
+                margin-right: 10px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        &__block {
+            position: relative;
+        }
+        &__input {
+            display: inline-block;
+            position: relative;
+            height: 60px;
+            width: clamp(2vw, 530px, 40vw);
+            border: 0;
+            border-radius: 5px;
+            padding: 20px 125px 20px 30px;
+            font-size: 14px;
+            z-index: 0;
+        }
+    }
+}

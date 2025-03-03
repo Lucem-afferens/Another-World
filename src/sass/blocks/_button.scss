@@ -1,0 +1,90 @@
+.btn {
+    display: block;
+    position: relative;
+    background: $btn-color;
+    color: #fff;
+    font-family: "Poppins", serif;
+    border: 0;
+    transition: all 500ms ease;
+    cursor: pointer;
+    &:not(.btn__details):not(.btn__form):hover {
+        background: $btn-hover-color;
+    }
+    &_header {
+        font-size: 16px;
+        padding: 7px 17px 9px 17px;
+        top: -7px;
+        border-radius: 5px;
+    }
+    &_main {
+        border-radius: 50px;
+        padding: 20px 40px;
+        font-size: clamp(0.8rem, 2vw, 2rem);
+        position: relative;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $btn-color 0 0 10px;
+        }
+    }
+    &_promo-us {
+        padding: 13px 40px;
+    }
+    &_promo-contacts {
+        font-size: 16px;
+        padding: 9px 17px 12px 17px;
+        border-radius: 5px;
+        width: 120px;
+        align-self: end;
+    }
+    &_form {
+        border-radius: 5px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 17px 13px 17px;
+        font-size: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        &:hover {
+            box-shadow: $btn-hover-color 0 0 5px;
+        }
+    }
+    &__details {
+        background: $btn-details-color;
+        font-size: 16px;
+        display: block;
+        padding: 12px 23px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        height: 53px;
+        &_hidden {
+            display: none;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &_trending {
+            transform: translateY(35px);
+            &:hover {
+                transform: translateY(35px) scale(1.1);
+                box-shadow: $btn-color 0 0 5px;
+            }
+        }
+        &_gallery {
+            margin: 0 auto;
+            margin-top: 60px;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: $btn-color 0 0 5px;
+            }
+        }
+    }
+    &_modal {
+        width: 100%;
+        height: 54px;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        margin-top: 18px;
+        border-radius: 10px;
+    }
+}

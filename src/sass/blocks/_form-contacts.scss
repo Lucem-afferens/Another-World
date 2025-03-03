@@ -1,0 +1,58 @@
+.form-contacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+    background: #1c140f;
+    &__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 80px;
+        &__name {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &__mail {
+            width: 100%;
+        }
+        &__message {
+            width: 100%;
+        }
+        &__label {
+            display: block;
+            font-size: 14px;
+            color: $cont-label-color;
+            justify-self: start;
+        }
+        &__input {
+            width: 100%;
+            background: $cont-input-color;
+            border: 0.6px solid #cecece;
+            border-radius: 10px;
+            padding: 15px 10px;
+            display: block;
+            outline: none;
+            margin-top: 7px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            &_name {
+                width: 49%;
+            }
+            &_message {
+                resize: none;
+                height: 200px;
+            }
+        }
+    }
+
+}

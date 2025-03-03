@@ -1,0 +1,56 @@
+.review {
+    padding-bottom: 100px;
+    padding-top: 40px;
+    &__title {
+        font-size: clamp(1.8rem, 3vw, 5rem);
+        font-weight: 600;
+        margin-bottom: 80px;
+    }
+    &__cards {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background: #1c140f;
+        border-radius: 10px;
+        max-width: 30%;
+        padding: 50px 35px;
+        &__img {
+            display: block;
+            max-width: 50%;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 0 auto;
+            &__stars {
+                max-width: 100%;
+            }
+            &_f {
+                background: #560f67;
+            }
+            &_b {
+                background: #31190d;
+            }
+            &_g {
+                background: #192a1d;
+            }
+        }
+        &__name {
+            font-size: 20px;
+            margin: 30px 0;
+            font-weight: 600;
+        }
+        &__content {
+            text-align: justify;
+            text-wrap: pretty;
+            font-size: 17px;
+        }
+    }
+    &__yandex {
+        display: none;
+    }
+}
