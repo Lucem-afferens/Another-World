@@ -11,6 +11,22 @@
             background: $btn-color;
         }
     }
+    .trending {
+        &__card {
+            &:hover > .trending__card_front {
+                transform: none;
+            }
+            &:hover > .trending__card_back {
+                transform: perspective(600px) rotateY(180deg);
+            }
+            &:focus > .trending__card_front {
+                transform: perspective(600px) rotateY(-180deg);
+            }
+            &:focus > .trending__card_back {
+                transform: perspective(600px) rotateY(0deg);
+            }
+        }
+    }
 }
 
 @media (max-width: 1451px) {
