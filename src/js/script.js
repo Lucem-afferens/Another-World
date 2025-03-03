@@ -1,6 +1,5 @@
 $(document).ready(function(){
   $('.news__slick').slick({
-      dots: true,
       infinite: true,
       speed: 500,
       fade: true,
@@ -16,7 +15,8 @@ $(document).ready(function(){
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
-    variableWidth: true
+    centerMode: true,
+    variableWidth: true,
   });
   $('.trending__cards_slick').slick({
     dots: false,

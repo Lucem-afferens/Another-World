@@ -37,6 +37,14 @@
     }
 }
 
+@media (max-width: 1430px) {
+    .trending {
+        &__cards {
+            column-gap: clamp(5rem,  20vw, 16.3rem);
+        }
+    }
+}
+
 @media (max-width: 1251px) {
     .container {
         position: none;
@@ -193,6 +201,25 @@
 
 
 @media (max-width: 900px) {
+    .benefits {
+        &__title {
+            max-width: 100%;
+            text-wrap: balance;
+        }
+        &__descr {
+            max-width: 100%;
+        }
+    }
+    .promo-us {
+        &__info {
+            h1 {
+                max-width: 100%;
+            }
+            &__descr {
+                max-width: 100%;
+            }
+        }
+    }
     .main {
         float: right;
         align-items: center;
@@ -291,6 +318,16 @@
                 }
             }
         }
+    }
+    .news {
+        &__header {
+            width: 100%;
+            text-wrap: balance;
+        }
+    }
+    .form-contacts {
+        max-width: 72%;
+        text-wrap: balance;
     }
 }
 
@@ -400,7 +437,7 @@
             display: none;
             &_slick {
                 display: block;
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
             }
         }
@@ -410,10 +447,11 @@
                 text-align: center;
                 max-width: 200px;
                 min-height: 200px;
+                width: auto;
                 position: relative;
                 margin-top: 50px;
                 &:not(:last-child) {
-                    margin-right: 70px;
+                    margin-right: 50px;
                 }
             }
             &__img {
@@ -436,13 +474,8 @@
             display: none;
         }
     }
-    .news {
-        &__header {
-            font-size: clamp(1.7rem, 2.5vw, 3rem);
-            transform: translateY(25px);
-        }
-    }
     .gallery {
+        position: relative;
         &__grid {
             row-gap: 5px;
         }
@@ -541,6 +574,9 @@
         .slick-next {
             right: 40%;
             top: 103%;
+        }
+        &__header {
+            transform: translateY(25px);
         }
     }
 }
