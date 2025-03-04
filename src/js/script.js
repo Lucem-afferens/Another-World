@@ -33,7 +33,7 @@ $(document).ready(function(){
     slidesToShow: 2,
     arrows: false,
     centerMode: true,
-    variableWidth: true
+    variableWidth: true,
   });
   $(window).scroll(function() {
     if ($(this).scrollTop() > 1000) {
