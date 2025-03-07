@@ -24,16 +24,19 @@ $(document).ready(function(){
     speed: 300,
     slidesToShow: 2,
     arrows: false,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
   $('.gallery__grid_visible').slick({
+    
+    
     dots: false,
     infinite: false,
     speed: 300,
     slidesToShow: 2,
-    arrows: false,
     centerMode: true,
     variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev_gallery"><img src="icons/left.png"></img></button>',
+    nextArrow: '<button type="button" class="slick-next_gallery"><img src="icons/right.png"></img></button>',
   });
   $(window).scroll(function() {
     if ($(this).scrollTop() > 1000) {
