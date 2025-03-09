@@ -27,8 +27,6 @@ $(document).ready(function(){
     adaptiveHeight: true,
   });
   $('.gallery__grid_visible').slick({
-    
-    
     dots: false,
     infinite: false,
     speed: 300,
@@ -50,12 +48,12 @@ $(document).ready(function(){
 
   $('[data-modal=consultation]').on('click', function() {
     $('.modal, #consultation').fadeIn(600);
-    $('body').toggleClass('fixed-page');
+    $('body, html').toggleClass('fixed-page');
   });
   
   $('.modal__close').on('click', function () {
       $('.modal, #consultation, #thanks').fadeOut(600);
-      $('body').removeClass('fixed-page');
+      $('body, html').removeClass('fixed-page');
   });
 
 
