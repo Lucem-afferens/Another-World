@@ -494,20 +494,6 @@
         }
         &_visible {
             display: block;
-            position: absolute;
-            border-radius: 0 10px 10px 0;
-            max-height: 450px;
-            top: 55px;
-            left: -100%;
-            background-color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 0 15px #ccc;
-            backdrop-filter: blur(10px);
-            overflow: auto; //для того, чтобы меню скроллилось в случае, если оно не влезает на экран
-            width: 60%;
-            transition: all 0.6s ease;
-            &.open-menu {
-                left: 0;
-            }
         }
     }
     .btn {
