@@ -1,0 +1,54 @@
+// @media (max-width: 1451px) {
+    
+// }
+
+// @media (max-width: 1430px) {
+    
+// }
+
+@media (max-width: 1251px) {
+    .btn {
+        &_promo-us {
+            margin: 0 auto;
+            margin-top: 30px;
+            padding: 30px 60px;
+            font-size: clamp(1.3rem, 3vw, 4rem);
+        }
+    }
+}
+
+// @media (max-width: 1025px) {
+    
+// }
+
+@media (max-width: 900px) {
+    .btn {
+        &__details {
+            &_trending {
+                display: none;
+            }
+            &_hidden {
+                display: block;
+            }
+        }
+        &_form {
+            padding: 7px 10px 10px 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        &:not(.btn__details):not(.btn__form):hover {
+            background: $btn-color;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .btn {
+        &_main {
+            padding: 10px 15px;
+        }
+    }
+}

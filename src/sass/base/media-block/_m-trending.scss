@@ -1,0 +1,75 @@
+// @media (max-width: 1451px) {
+    
+// }
+
+@media (max-width: 1430px) {
+    .trending {
+        &__cards {
+            column-gap: clamp(5rem,  20vw, 16.3rem);
+        }
+    }
+}
+
+// @media (max-width: 1251px) {
+    
+// }
+
+// @media (max-width: 1025px) {
+    
+// }
+
+@media (max-width: 900px) {
+    .trending {
+        &__header {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .trending {
+        margin-top: 200px;
+        &__cards {
+            display: none;
+            &_slick {
+                display: block;
+                margin-top: 50px;
+            }
+        }
+        &__card {
+            font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+            &:hover > .trending__card_front {
+                transform: none;
+            }
+            &:hover > .trending__card_back {
+                transform: perspective(600px) rotateY(180deg);
+            }
+            &:focus > .trending__card_front {
+                transform: perspective(600px) rotateY(-180deg);
+            }
+            &:focus > .trending__card_back {
+                transform: perspective(600px) rotateY(0deg);
+            }
+            &_slick {
+                max-width: 35vw;
+                max-height: none;
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+            &_front {
+                img {
+                    height: 45vw;
+                }
+            }
+            &_back {
+                height: 45vw;
+                overflow: scroll;
+
+            }
+        }
+    }
+}
+
+// @media (max-width: 426px) {
+    
+// }

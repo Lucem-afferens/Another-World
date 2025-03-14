@@ -1,0 +1,114 @@
+// @media (max-width: 1451px) {
+    
+// }
+
+// @media (max-width: 1430px) {
+    
+// }
+
+@media (max-width: 1251px) {
+    .footer {
+        &__info {
+            &__timetable {
+                display: none;
+            }
+        }
+    }
+}
+
+// @media (max-width: 1025px) {
+    
+// }
+
+@media (max-width: 900px) {
+    .footer {
+        &__info {
+            &_mini {
+                width: 13rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+            gap: 40px;
+            &__social {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+                order: 4;
+                h4 {
+                    display: none;
+                }
+                &__vk {
+                    margin: 0;
+                }
+            }
+            &__link {
+                display: flex;
+                line-height: 1em;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                h4 {
+                    display: none;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 0;
+                    gap: 20px;
+                    li {
+                        font-size: clamp(0.9rem, 3vw, 2rem);
+                    } 
+                }
+            }
+            &_mini {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                font-size: clamp(0.9rem, 3vw, 2rem);
+
+            }
+            &__about-us {
+                display: flex;
+                width: 100%;
+                line-height: 1em;
+                justify-content: center;
+                align-items: center;
+                h4 {
+                    display: none;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0;
+                    text-align: center;
+                    gap: 20px;
+                    li {
+                        font-size: clamp(0.9rem, 3vw, 2rem);
+                        max-width: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: 426px) {
+    
+// }

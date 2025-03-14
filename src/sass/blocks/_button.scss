@@ -22,7 +22,7 @@
         font-size: clamp(0.8rem, 2vw, 2rem);
         position: relative;
         &:hover {
-            transform: scale(1.1);
+            transform: scale(0.9);
             box-shadow: $btn-color 0 0 10px;
         }
     }

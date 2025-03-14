@@ -1,0 +1,41 @@
+// @media (max-width: 1451px) {
+    
+// }
+
+// @media (max-width: 1430px) {
+    
+// }
+
+// @media (max-width: 1251px) {
+    
+// }
+
+// @media (max-width: 1025px) {
+    
+// }
+
+@media (max-width: 900px) {
+    .form-contacts {
+        max-width: 72%;
+        text-wrap: balance;
+    }
+}
+
+// @media (max-width: 768px) {
+    
+// }
+
+@media (max-width: 426px) {
+    .form-contacts {
+        &__form {
+            &__name {
+                flex-direction: column;
+            }
+            &__input {
+                &_name {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}

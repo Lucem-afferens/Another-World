@@ -4,6 +4,9 @@ const sass = require('gulp-sass')(require('sass'));
 const rename = require("gulp-rename");
 const cleanCSS = require('gulp-clean-css');
 const  autoprefixer  =  require ( 'gulp-autoprefixer' ) ;
+const sassGlob = require('gulp-sass-glob'); // плагин для сборки всех файлов sass/scss в один файл sass/scss через @import...
+const groupMedia = require('gulp-group-css-media-queries'); // плагин для группирования медиа-запросов (объединяет медиа-запросы на одно значение). При этом он ломает исходные карты.
+
 
 
 
@@ -19,8 +22,10 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(sass|scss)")
+    return gulp.src("src/sass/**/**/*.+(sass|scss)")
+        .pipe(sassGlob())
         .pipe(sass({style: 'compressed'}).on('error', sass.logError))
+        .pipe(groupMedia()) 
         .pipe(rename({
             prefix: "",
             suffix: ".min",
