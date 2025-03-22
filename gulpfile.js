@@ -22,7 +22,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/**/*.+(sass|scss)")
+    return gulp.src("src/sass/**/*.+(sass|scss)")
         .pipe(sassGlob())
         .pipe(sass({style: 'compressed'}).on('error', sass.logError))
         .pipe(groupMedia()) 
@@ -43,4 +43,7 @@ gulp.task('watch', function() {
 
 })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+gulp.task('default', gulp.series( // первый аргумент галпа , являющийся именем таска, default, это значит, что имя = gulp
+    'styles',
+    gulp.parallel('watch','server')
+));
