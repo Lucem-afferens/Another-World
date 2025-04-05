@@ -10,6 +10,12 @@
     
 // }
 
+@media (hover:none) {
+    .benefits {
+        background:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.9)), url('../../img/bgForBenefits.jpg') /*Создание затемнения фонового изображения в виде градиента*/ no-repeat center center scroll;
+    }
+}
+
 @media (max-width: 1025px) {
     .benefits {
         margin-top: 150px;

@@ -22,23 +22,23 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(sass|scss)")
+    return gulp
+        .src("src/sass/**/*.(sass|scss)")
         .pipe(sassGlob())
         .pipe(sass({style: 'compressed'}).on('error', sass.logError))
-        .pipe(groupMedia()) 
+        //.pipe(groupMedia())     -->   ВКЛЮЧИТЬ ПЕРЕД ПРОДАКШЕНОМ ДЛЯ ОПТИМИЗАЦИИ В КОНЦЕ РАБОТЫ!!!
         .pipe(rename({
             prefix: "",
-            suffix: ".min",
-          }))  
+            suffix: ".min", // добавление суфикса к файлу
+            }))  
         .pipe(autoprefixer())
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("src/css"))
-        .pipe(browserSync.stream())
-        
+        .pipe(cleanCSS({compatibility: 'ie8'})) // совместимость: ie8 
+        .pipe(gulp.dest("./src/css")) // перенос результата в папку "./src/css"
+        .pipe(browserSync.stream())   
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/sass/**/*.+(sass|scss)", gulp.parallel("styles"));
+    gulp.watch("src/sass/**/*.(sass|scss)", gulp.parallel("styles"));
     gulp.watch("src/*.html").on("change", browserSync.reload);
 
 })

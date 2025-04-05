@@ -36,6 +36,8 @@ $(document).ready(function(){
     prevArrow: '<button type="button" class="slick-prev_gallery"><img src="icons/left.png"></img></button>',
     nextArrow: '<button type="button" class="slick-next_gallery"><img src="icons/right.png"></img></button>',
   });
+
+  // pageup
   $(window).scroll(function() {
     if ($(this).scrollTop() > 1000) {
         $('.pageup').fadeIn();
