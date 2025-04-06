@@ -59,9 +59,10 @@ header {
     position: absolute;
     top: 50px;
     &__img {
-        width: 80px;
+        width: clamp(80px, 4vw, 120px);
     }
     &__text {
+        font-size: clamp(16px, 1vw, 24px);
         transform: translateY(7px);
         &_red {
             color: #900000;

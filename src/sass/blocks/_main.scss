@@ -3,12 +3,12 @@
     width: 42%;
     &__subtitle {
         color: #e87d0e;
-        font-size: 20px;
+        font-size: clamp(20px, 1vw, 26px);
         font-weight: 600;
     }
     &__title {
         width: 95%;
-        font-size: clamp(1rem, 2.5vw, 3.8rem);
+        font-size: clamp(1rem, 2.5vw, 4.2rem);
         font-weight: 600;
         line-height: 1.5em;
         &_big {
@@ -17,12 +17,12 @@
         }
     }
     &__text {
-        font-size: clamp(18px, 1.4vw, 20px);
+        font-size: clamp(18px, 1.3vw, 26px);
         font-weight: 500;
         line-height: 170%;
         margin: 30px 0;
         &_big {
-            font-size: 25px;
+            font-size: clamp(25px, 2vw, 32px);
             font-weight: 700;
             text-transform: uppercase;
         }
@@ -44,7 +44,7 @@
     &__img {
         display: block;
         position: absolute;
-        width: 800px;
+        width: clamp(800px, 50vw, 1100px);
         max-width: 60%;
         min-height: 600px;
         top: 110px;

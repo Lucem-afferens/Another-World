@@ -1,5 +1,5 @@
 .trending {
-    margin-top: clamp(10rem, 30vh, 60rem);
+    margin-top: clamp(10rem, 10vw, 60rem);
     font-size: 18px;
     text-wrap: pretty;
     position: relative;
@@ -13,11 +13,11 @@
         }
     }
     &__cards {
-        margin-top: 60px;
+        margin-top: 80px;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 75px;
+        row-gap: 75px;
         &_slick {
             display: none;
         }
@@ -25,7 +25,7 @@
     &__card {
         display: block;
         position: relative;
-        width: 250px;
+        width: clamp(250px, 15vw, 350px);
         text-align: center;
         margin-bottom: 30px;
         &:hover > .trending__card_front {
@@ -43,7 +43,7 @@
             transform: perspective(600px) rotateY(0deg);
             img {
                 width: 100%;
-                max-height: 348px;
+                max-height: clamp(348px, 20vw, 490px);
                 border-radius: 25px;
                 border: 7px solid $btn-hover-color;
             }

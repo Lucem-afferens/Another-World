@@ -18,6 +18,10 @@
     &__map {
         width: 100%;
         margin-top: 40px;
-        border-radius: 30px;
+        height: clamp(450px, 35vw, 850px);
+        filter: brightness(70%);
+        iframe {
+            border-radius: 30px;
+        }
     }
 }

@@ -1,7 +1,7 @@
 .news {
     margin-top: 100px;
     &__header {
-        font-size: clamp(1.5rem, 2.5vw, 3rem);
+        font-size: clamp(1.5rem, 2.5vw, 3.8rem);
         font-weight: 600;
         width: 60%;
         margin: 0 auto;
@@ -11,25 +11,35 @@
         max-width: 100%;
         margin-top: 80px;
         &__title {
-            font-size: clamp(1.5rem, 2.5vw, 3rem);
+            font-size: clamp(1.5rem, 2.5vw, 3.4rem);
             font-weight: 600;
         }
         &__descr {
-            max-width: 600px;
+            font-size: clamp(14px, 3vw, 28px);
+            max-width: 1100px;
             text-wrap: balance;
             margin-top: 30px;
         }
+        &__block {
+            height: 100%;
+            max-height: 1200px;
+        }
         &__media {
+            margin: 0 auto;
             margin-top: 50px;
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
             video {
                 margin: 0 auto;
-                max-width: 100%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
             }
             img {
                 margin: 0 auto;
-                max-height: 735px;
-                max-width: 100%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
             }
         }
     }

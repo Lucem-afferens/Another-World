@@ -17,9 +17,9 @@
         border-radius: 5px;
     }
     &_main {
-        border-radius: 50px;
-        padding: 20px 40px;
-        font-size: clamp(0.8rem, 2vw, 2rem);
+        border-radius: 100px;
+        padding: 1.5rem 40px;
+        font-size: clamp(0.8rem, 2vw, 4rem);
         position: relative;
         &:hover {
             transform: scale(0.9);
